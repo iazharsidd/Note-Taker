@@ -1,0 +1,29 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+  <display-name>NoteTaker Web Application</display-name>
+
+  <servlet>
+    <servlet-name>SaveNoteServlet</servlet-name>
+    <servlet-class>com.servlets.SaveNoteServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>DeleteServlet</servlet-name>
+    <servlet-class>com.servlets.DeleteServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SaveNoteServlet</servlet-name>
+    <url-pattern>/SaveNoteServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>DeleteServlet</servlet-name>
+    <url-pattern>/DeleteServlet</url-pattern>
+  </servlet-mapping>
+
+</web-app>
